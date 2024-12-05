@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid; */
+
+}
+
+#gamebox {
+    margin-left: 40%;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(187, 230, 215);
+    display: flex;
+    flex-wrap: wrap; /* Allows the boxes to wrap into rows */
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+.box{
+    border: 4px solid darkcyan;
+    height: 95px; /* Adjust height for better appearance */
+    width: 94px;  /* Adjust width for better appearance */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Style for the clicked boxes */
+.box.played {
+    background-color: #ddd;   /* Light gray background for played boxes */
+    cursor: not-allowed;      /* Change cursor to indicate it can't be clicked */
+}
+
+/* Optionally, you can change the color for the X or O moves */
+.box p {
+    margin: 0;
+    font-size: 2em;
+}
